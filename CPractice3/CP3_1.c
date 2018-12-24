@@ -2,6 +2,11 @@
 /*练习基本输入输出函数*/
 int main()
 {
+	UsePutchar();
+}
+
+int UsePutchar()
+{
 	char cChar1, cChar2, cChar3, cChar4;
 	cChar1 = 'H';
 	cChar2 = 'e';
