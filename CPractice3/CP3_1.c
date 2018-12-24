@@ -3,8 +3,9 @@
 /*练习基本输入输出函数*/
 int main()
 {
-	/*UsePutchar();*/
-	UseGetchar();
+	/*UsePutchar();
+	UseGetchar();*/
+	UsePuts();
 }
 
 /*单字符变量的输出*/
@@ -39,6 +40,21 @@ int UseGetchar()
 	getchar();
 	putchar(getchar());
 	putchar('\n');
+
+	system("pause");
+	return 0;
+}
+
+/*字符串输出*/
+int UsePuts()
+{
+	char* Char = "ILOVECHINA";
+
+	puts("ILOVECHINA");
+	puts("I\0LOVE\0CHINA");
+	puts(Char);
+	Char = "ILOVECHINA!";
+	puts(Char);
 
 	system("pause");
 	return 0;
