@@ -8,7 +8,7 @@ int main()
 	UseGets();
 	UsePrintf();
 	UseScanf();*/
-
+	OrderPrograming();
 }
 
 /*单字符变量的输出*/
@@ -95,6 +95,16 @@ int UseScanf()
 {
 	SimpleMtehod(); /*简单用法*/
 	ComplexMethod(); /*高级用法*/
+
+	system("pause");
+	return 0;
+}
+
+/*顺序程序设计*/
+int OrderPrograming()
+{
+	CircleArea();
+	TransForm();
 
 	system("pause");
 	return 0;

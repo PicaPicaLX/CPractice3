@@ -36,3 +36,21 @@ void ComplexMethod()
 	printf("The Number2 is: %d\n", iNumber2);
 	printf("The three character are: %s\n", cChar);
 }
+
+void CircleArea()
+{
+	float Pie = 3.14f;
+
+	float fArea;
+	float fRadius;
+
+	puts("Enter the radius: ");
+	scanf_s("%f", &fRadius);
+	fArea = fRadius * fRadius*Pie;
+	printf("The area is: %.2f\n", fArea); /*表示取2位小数*/
+}
+
+void TransForm()
+{
+
+}
