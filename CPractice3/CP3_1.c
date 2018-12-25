@@ -1,11 +1,14 @@
 ﻿#include <stdio.h>
-#include <Windows.h>
 /*练习基本输入输出函数*/
 int main()
 {
 	/*UsePutchar();
-	UseGetchar();*/
+	UseGetchar();
 	UsePuts();
+	UseGets();
+	UsePrintf();*/
+	UseScanf();
+
 }
 
 /*单字符变量的输出*/
@@ -59,3 +62,42 @@ int UsePuts()
 	system("pause");
 	return 0;
 }
+
+/*字符串输入*/
+int UseGets()
+{
+	char cString[30];
+	gets(cString);
+	puts(cString);
+
+	system("pause");
+	return 0;
+}
+
+/*格式输出函数*/
+int UsePrintf()
+{
+	long iLong = 100000;
+	printf("The Long is: %ld\n", iLong); /*输出长整型变量*/
+
+	printf("The string is: %s\n", "LOVE"); /*输出字符串LOVE*/
+	printf("The string is: %10s\n", "LOVE"); /*使用%ms格式控制输出, 表示输出的字符串占m列, 若字符串长于m, 则突破限制输出, 否则空格补全左侧*/
+	printf("The string is: %-10s\n", "LOVE"); /*使用%-ms格式控制输出, 表示输出的字符串占m列, 若字符串长于m, 则突破限制输出, 否则空格补全右侧*/
+	printf("The string is: %10.3s\n", "LOVE"); /*使用%m.ns格式控制输出,表示输出的字符串占m列, 但只取左侧n个字符, 若字符串长于m则突破限制输出, 不全的用空格补全左侧*/
+	printf("The string is: %-10.3s\n", "LOVE"); /*使用%m.ns格式控制输出,表示输出的字符串占m列, 但只取左侧n个字符, 若字符串长于m则突破限制输出, 不全的用空格补全右侧*/
+
+	system("pause");
+	return 0;
+}
+
+/*格式输入函数*/
+int UseScanf()
+{
+	SimpleMtehod();
+	ComplexMethod();
+
+	system("pause");
+	return 0;
+}
+
+/*格式输入函数的高级用法*/
