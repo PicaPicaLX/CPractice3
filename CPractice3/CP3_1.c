@@ -6,8 +6,8 @@ int main()
 	UseGetchar();
 	UsePuts();
 	UseGets();
-	UsePrintf();*/
-	UseScanf();
+	UsePrintf();
+	UseScanf();*/
 
 }
 
@@ -93,11 +93,9 @@ int UsePrintf()
 /*格式输入函数*/
 int UseScanf()
 {
-	SimpleMtehod();
-	ComplexMethod();
+	SimpleMtehod(); /*简单用法*/
+	ComplexMethod(); /*高级用法*/
 
 	system("pause");
 	return 0;
 }
-
-/*格式输入函数的高级用法*/

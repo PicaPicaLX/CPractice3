@@ -27,7 +27,7 @@ void ComplexMethod()
 	printf("Enter the number: \n");
 	scanf_s("%d*%d", &iNumber1, &iNumber2);
 
-	printf("ENter the string but only show three character: \n");
+	printf("Enter the string but only show three character: \n");
 	scanf_s("%3s", cChar,10);
 
 	printf("The long interger is: %ld\n", iLong);
